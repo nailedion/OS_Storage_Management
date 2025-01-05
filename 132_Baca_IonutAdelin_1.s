@@ -914,12 +914,12 @@ f_comprehension:
         movl $1024, %ecx
         divl %ecx
 
-        cmpl $0, %edx
-        je et_restul0
+        #cmpl $0, %edx
+        #je et_restul0
 
-            addl $1, %eax
+            #addl $1, %eax
 
-        et_restul0:
+        #et_restul0:
 
         movl %eax, sizeul #size retine dimensiunea in kb
 
@@ -941,6 +941,9 @@ f_comprehension:
         movl $0, cf
         movl $0, li
         movl $0, lf
+
+        cmpl $0, dim
+        je et_afisare_concrete
 
         movl $0, i #contorizator linii
         et_parc_linii_concrete:
