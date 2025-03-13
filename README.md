@@ -63,6 +63,8 @@ This project implements storage management for a minimal operating system, writt
 
 ## Technical Details
 
+The 132_Baca_IonutAdelin_0.s is unidimensional and the 132_Baca_IonutAdelin_1.s is the bidimensional case.
+
 ### System Architecture
 
 #### Unidimensional Memory:
@@ -82,7 +84,7 @@ This project implements storage management for a minimal operating system, writt
 ### Compilation
 Ensure you have GCC installed. Compile the code as follows:
 ```sh
-gcc -m32 -no-pie Bidimensional.s -o bidimensional
+gcc -m32 132_Baca_IonutAdelin_0.s -o 132_Baca_IonutAdelin_0
 ```
 
 ### Input Format
